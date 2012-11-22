@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cosmosteel</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="assets/css/lightbox.css" type="text/css" media="screen" />
+<link href="assets/css/cosmosteel_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="assets/js/dd_script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="assets/js/scroll.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/navigation.html",
+    success: function(data){
+      $('#navigation').html(data);
+    }
+  })
+})
+</script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/footer.html",
+    success: function(data){
+      $('#foot').html(data);
+    }
+  })
+})
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="img_bg_s_services">
+    	<div id="header">
+       		<div class="logo_holder"><h1><a href="index.html"><img src="assets/images/cosmosteel_logo.png" alt="Cosmosteel" width="159" height="106" border="0" /></a></h1></div>
+          <!-- Navigation Called thru AJAX-->
+          <div id="navigation"></div>
+          <!-- END Navigation -->
+        </div>
+      <div id="main_content">
+        	<div class="main_left"><img src="assets/images/services.png" width="369" height="414" /></div>
+            <div class="main_right">
+            	<div class="sub_text_bg">
+                	<div class="sub_text_r1"><h2>Ferrite Tester</h2></div>
+                    <div class="sub_text_r2">
+                    	<div class="scrollbararea">
+			<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+				<div class="viewport">
+					<div class="overview">
+                      
+                  
+                    	<div class="s_holder">
+                        	<div class="s_holder1"><a href="assets/services_items/big_services_ferrite_scope_fmp0.jpg" rel="lightbox" title="FERRITE SCOPE FMP10"><img src="assets/services_items/thumb_services_ferrite_scope_fmp0.jpg" width="131" height="131" border="0" /></a></div>
+                            <div class="s_holder2">
+                            <p><strong class="this_red">FERRITE SCOPE FMP10</strong></p>
+                            <p>Use to measure the Ferrite Content of austenitic and Duplex steel & to determine the portion of deformation martensite in austenitic materials.</p>
+
+                                    
+                            <a href="assets/services_items/big_services_ferrite_scope_fmp0.jpg" rel="lightbox" title="FERRITE SCOPE FMP10"><img src="assets/images/zoom_btn.png" width="33" height="31" border="0" /></a></div>
+                        </div>
+
+                
+                
+                
+                                             
+					</div>
+				</div>
+		  </div>
+                    </div>	
+                </div>
+            </div>
+      </div>
+        
+       
+    
+    
+    </div>
+    
+      <!-- Footer Called thru AJAX-->
+     <div id="foot"></div>
+    <!-- END Footer Called thru AJAX-->
+
+</div>
+<script>
+$(function(){ $('.scrollbararea').tinyscrollbar(); });
+</script>
+<script src="assets/js/jquery.smooth-scroll.min.js"></script> 
+<script src="assets/js/lightbox.js"></script> 
+</body>
+</html>

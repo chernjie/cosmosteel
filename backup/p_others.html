@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cosmosteel</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="assets/css/cosmosteel_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="assets/js/dd_script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="assets/js/scroll.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/navigation.html",
+    success: function(data){
+      $('#navigation').html(data);
+    }
+  })
+})
+</script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/products_list.html",
+    success: function(data){
+      $('#products_list').html(data);
+    }
+  })
+})
+</script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/footer.html",
+    success: function(data){
+      $('#foot').html(data);
+    }
+  })
+})
+</script>
+</head>
+<body>
+<div id="wrap">
+  <div id="img_bg_b_products">
+    <div id="header">
+      <div class="logo_holder">
+        <h1><a href="index.html"><img src="assets/images/cosmosteel_logo.png" alt="Cosmosteel" width="159" height="106" border="0" /></a></h1>
+      </div>
+      <!-- Navigation Called thru AJAX-->
+      <div id="navigation"></div>
+      <!-- END Navigation --> 
+    </div>
+    <div id="main_content">
+      <div class="main_left"><img src="assets/images/product/others/big_o1.png" width="369" height="414" /></div>
+      <div class="main_right">
+        <div class="product_text_bg">
+          <div class="sub_text_r1">
+            <h2>Others</h2>
+          </div>
+          <div class="product_r2">
+                   <div class="product_r2_spec1">
+                    <div class="scrollbararea">
+                      <div class="scrollbar">
+                        <div class="track">
+                          <div class="thumb">
+                            <div class="end"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="viewport" style="height: 125px;">
+                        <div class="overview">
+                          <p>We supply other products such as</p>
+                          
+                         <div class="list_prod">
+                         <strong class="this_red">Structurals</strong>
+							<ul>
+                       			<li>Plates</li>
+                                <li>I Beams</li>
+                                <li>Channels</li>
+                                <li>Angles - Equal / Unequal</li>
+                                <li>Bars - Flat / Round</li>
+                                <li>Coils / Sheets</li>
+                                <li>Hollow Sections (Round, Square, Rectangular)</li>
+                                <li>Gratings</li>
+                            </ul> 
+                            
+                            <span class="this_red"><strong>Fasteners</strong></span>
+                            <ul>
+                            	<li>Stud-bolts and Nuts</li>
+                                <li>High Tensile Machined Bolts</li>
+                           </ul>
+                            
+                            
+                           <strong class="this_red"> Gaskets</strong>
+                            <ul>
+                                <li>Spiral wound</li>
+                                <li>Neoprene</li>
+                                <li>Compressed Asbestos Fibre</li>
+                                <li>Compressed Non-Asbestos Fibre</li>
+							</ul>
+                         </div> 
+                        </div>
+                      </div>
+                    </div>
+            </div>
+                    <div class="product_r2_spec2"> <a href="#"><img src="assets/images/dl_pdf_btn.png" alt="Download PDF" width="109" height="31" border="0" title="Download PDF" /></a><br />
+                    
+                    <a href="#"><img src="assets/images/product/others/small_o1.png" width="79" height="81" border="0" /></a>
+                    
+                    <a href="#"><img src="assets/images/product/others/small_o2.png" width="79" height="81" border="0" /></a></div>
+          </div>
+          <div class="product_r3">
+           <!-- Product lists Called thru AJAX-->
+          <div id="products_list"></div>
+          <!-- END Product Lists-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Footer Called thru AJAX-->
+     <div id="foot"></div>
+    <!-- END Footer Called thru AJAX-->
+</div>
+<script>
+$(function(){ $('.scrollbararea').tinyscrollbar(); });
+</script>
+</body>
+</html>

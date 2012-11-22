@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cosmosteel</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="assets/css/cosmosteel_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="assets/js/dd_script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="assets/js/scroll.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/navigation.html",
+    success: function(data){
+      $('#navigation').html(data);
+    }
+  })
+})
+</script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/footer.html",
+    success: function(data){
+      $('#foot').html(data);
+    }
+  })
+})
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="img_bg_a_business_overview">
+    	<div id="header">
+       		<div class="logo_holder"><h1><a href="index.html"><img src="assets/images/cosmosteel_logo.png" alt="Cosmosteel" width="159" height="106" border="0" /></a></h1></div>
+          <!-- Navigation Called thru AJAX-->
+          <div id="navigation"></div>
+          <!-- END Navigation -->
+        </div>
+      <div id="main_content">
+        	<div class="main_left"><img src="assets/images/about_us_b_overview.png" width="369" height="414" /></div>
+            <div class="main_right">
+            	<div class="sub_text_bg">
+                	<div class="sub_text_r1"><h2>Business Overview</h2></div>
+                    <div class="sub_text_r2">
+                    	<div class="scrollbararea">
+			<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+				<div class="viewport">
+					<div class="overview">
+                    <h3><strong class="this_red">Corporate Profile</strong></h3>
+						<p>Backed by a track record of almost 30 years, SGX Mainboard-listed CosmoSteel Holdings Limited (“CosmoSteel Group”), has a strong reputation as a supplier and distributor of piping system components to the Energy, Marine, Water infrastructure and other industries. Product quality, timeliness and reliable customer deliveries are the foundation of our business.</p>
+
+<p>Through years of business, CosmoSteel Group has built strong working relationships and received reliable support from major manufacturers in Europe, US, Japan and the PRC to supply consistent quality products to our customers. We dedicate our business to the pursuit of achieving total
+customer satisfaction by offering quality products and services at competitive prices and seeking continuous improvement in our quality, environmental and occupational health and safety integrated management system.</p>
+
+<p>Over the years, CosmoSteel Group has developed strategic alliances with both suppliers and customers, regionally and internationally, and has successfully established our reputation as a service-oriented and reliable solution provider in the sourcing and distribution of piping system components.</p>
+
+<p>Today, CosmoSteel Group’s strength lies in our commitment to exceed customer’s expectations and requirements, placing focus on quality and
+reliability as our service beacon. Attesting to our unwavering commitment to these values, our Group has received numerous world-class certifications over the years including ISO 9002:1994 in 2000; ISO 9001:2000 in 2003; and in 2009, ISO9001:2008, ISO14001:2004 and OHSAS 18001:2007 in 2009; Fastet Growing Internationalising Award in 2011; and in 2012, bizSAFE STAR status.</p>
+
+                <h3><strong class="this_red">Our Customers And Their Uses Of Our Products</strong></h3>
+                		<p>Our customers use our products as components mainly to construct piping systems for the conduit of liquids and gases in the production processes of the Energy, Marine and other industries.</p>
+                        <ul>
+                        	<li><strong class="this_red">Energy industry</strong><br />
+                            Our products are used for off shore rig fabrication (including jack-up and semi-submersible rigs), Floating Production Storage and Offloading (FPSO) / Floating Storage and Offloading (FSO) vessel conversion and building, and onshore Energy facilities fabrication.
+                          </li>
+                            <li><strong class="this_red">Marine industry</strong><br />
+                            Our products are used for shipbuilding and repair in this industry and our customers include the major local shipyards in Singapore.
+                          </li>
+                            <li><strong class="this_red">Traders</strong><br />
+                            We sell to traders who on-sell our products to their customers which may include end user customers from the Energy and Marine industries.
+                          </li>
+                            <li><strong class="this_red">Others</strong><br />
+                            We supply our products to other industries such as the manufacturing and pharmaceutical sectors.
+                          </li>
+                        </ul>
+                                             
+					</div>
+				</div>
+		  </div>
+                    </div>	
+                </div>
+            </div>
+      </div>
+        
+       
+    
+    
+    </div>
+    
+      <!-- Footer Called thru AJAX-->
+     <div id="foot"></div>
+    <!-- END Footer Called thru AJAX-->
+
+</div>
+<script>
+$(function(){ $('.scrollbararea').tinyscrollbar(); });
+</script>
+</body>
+</html>

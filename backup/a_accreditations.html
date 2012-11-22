@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cosmosteel</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="assets/css/cosmosteel_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="assets/js/dd_script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="assets/js/scroll.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/navigation.html",
+    success: function(data){
+      $('#navigation').html(data);
+    }
+  })
+})
+</script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/footer.html",
+    success: function(data){
+      $('#foot').html(data);
+    }
+  })
+})
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="img_bg_a_accreditations">
+    	<div id="header">
+       		<div class="logo_holder"><h1><a href="index.html"><img src="assets/images/cosmosteel_logo.png" alt="Cosmosteel" width="159" height="106" border="0" /></a></h1></div>
+          <!-- Navigation Called thru AJAX-->
+          <div id="navigation"></div>
+          <!-- END Navigation -->
+        </div>
+      <div id="main_content">
+        	<div class="main_left"><img src="assets/images/accreditation.png" width="369" height="414" /></div>
+            <div class="main_right">
+            	<div class="sub_text_bg">
+                	<div class="sub_text_r1">
+               	  <h2>QEHS Policy</h2></div>
+                    <div class="sub_text_r2">
+                    	<div class="scrollbararea">
+			<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+				<div class="viewport">
+					<div class="overview">
+                    <h3><strong>QUALITY, ENVIRONMENTAL &
+OCCUPATIONAL HEALTH AND SAFETY
+(QEHS) POLICY
+</strong></h3>
+						<p>The measure of a company’s success lies beyond its financial performance. In CosmoSteel Group, we believe in conducting our business in a socially, economically and environmentally responsible manner toward our stakeholders. Our Quality, Environmental and Occupational Health and Safety (QEHS) policies, which integrate and manage the issues of sustainability and social responsibility within our operations, guide us in the way we conduct our business. </p>
+
+                <p>QUALITY, ENVIRONMENTAL & OCCUPATIONAL HEALTH AND SAFETY (QEHS) POLICY</p>
+                
+                <p>We operate our business within the following scope that forms the foundation of our implemented Integrated Management System.</p>
+                	<ul>	
+                 <li>Knowing and communicating safety & health incident preventions to all concerning parties;</li>
+
+<li>Securing environmental preservation, protection and prevention of pollution;</li>
+
+<li>Having quality products and services that meets or exceeds customers’ expectations;</li>
+
+<li>Harnessing a systematic approach to QEHS management to ensure compliance with all applicable laws and regulations.</li>
+                            
+                  </ul>
+                  <br />                           
+                  <p>We are committed to implement the integrated management system through the following 5Cs:</p> 
+                  <div class="list_no">                          
+                    <ul>
+                        <li>	Communication of our policy and practices to all our employees and other concerning parties to prevent injury and ill health;</li>
+
+<li>	Conserving resources, by reducing, reusing and recycling where possible;</li>
+
+<li>	Conducting appropriate training to instill a sense of duty in every employee towards personal safety and health and environmental preservation;</li>
+
+<li>	Compliance with applicable legal requirements and with other requirements to which the organization subscribes that relates to the quality, environmental aspect and occupational health & safety hazards;</li>
+
+<li>	Continually reviewing and improving the integrated management system to ensure its relevance and appropriateness.</li>
+              
+    </ul>       
+    </div>
+    <br />
+    <p>As part of these QEHS policies, we have put in place management programs pegged to performance indicators which include the following:</p>
+    
+                 <ul>
+                <li> To reduce electricity consumption;</li>
+<li>To reduce paper consumption;</li>
+<li>To reduce water consumption;</li>
+<li>To improve safety in general work operations;</li>
+<li>To improve the well being of our employees by promoting healthy life-style.</li>
+
+                 </ul>
+                 <p>Testifying to our commitment to QEHS, we have been awarded ISO and OHSAS accreditations including ISO 9002:1994 in 2000, ISO 9001:2000 in 2003, and ISO9001:2008, ISO14001:2004 and OHSAS 18001:2007 in 2009 in 2012, we have achieved bizSAFE STAR status.</p>
+                                      
+				  </div>
+				</div>
+		  </div>
+                    </div>	
+                </div>
+            </div>
+      </div>
+        
+       
+    
+    
+    </div>
+    
+      <!-- Footer Called thru AJAX-->
+     <div id="foot"></div>
+    <!-- END Footer Called thru AJAX-->
+
+</div>
+<script>
+$(function(){ $('.scrollbararea').tinyscrollbar(); });
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cosmosteel</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="assets/css/cosmosteel_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="assets/js/dd_script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="assets/js/scroll.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/navigation.html",
+    success: function(data){
+      $('#navigation').html(data);
+    }
+  })
+})
+</script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/footer.html",
+    success: function(data){
+      $('#foot').html(data);
+    }
+  })
+})
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="img_bg_ir">
+    	<div id="header">
+       		<div class="logo_holder"><h1><a href="index.html"><img src="assets/images/cosmosteel_logo.png" alt="Cosmosteel" width="159" height="106" border="0" /></a></h1></div>
+          <!-- Navigation Called thru AJAX-->
+          <div id="navigation"></div>
+          <!-- END Navigation -->
+        </div>
+      <div id="main_content">
+        	<div class="ir_wrap">
+            	<div class="ir_text_bg">
+                	<div class="ir_holder">
+                    	<div class="ir_left">
+                   	    <img src="assets/images/latest_news_bar.png" border="0" />
+                        <ul>
+                        	<li>
+                            <span class="ir_news_date">Sep 18, 2012</span><br />
+                           <a href="#">Notice Of A Director's (Including A Director Who Is A Substantial Shareholder) Interest And Change In Interest </a></li>
+                           
+                           <li>
+                           <span class="ir_news_date">Aug 08, 2012</span><br />
+                           <a href="#">Third Quarter Results Financial Statement And Related Announcement </a></li>
+                           
+                           <li>
+                           <span class="ir_news_date">May 09, 2012</span><br />
+                           
+                           <a href="#">Second Quarter Results Financial Statement And Related Announcement</a></li>
+                        </ul>
+                        <a href="#" style="color: #fc2d2d; font-size: 10px">more + </a>
+                        <br /><br />
+                        <img src="assets/images/ar_bar.png" alt="Annual Report" /><br /><br />
+                        <img src="assets/images/ar2011_thumb.jpg" alt="Annual Report 2011" width="79" height="118" style="float: left; margin-right: 12px;"/> <p style="padding-top: 30px"><a href="#">Annual Report 2011<br />Download</a></p></div>
+                      <div class="ir_right">
+                      	<div class="ir_right_title"><h2>Investor Relations</h2></div>
+                        <div class="scrollbararea" style="width: 497px">
+			<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+				<div class="viewport" style="width: 480px">
+					<div class="overview">
+                    <div class="ir_intro">
+                        <img src="assets/images/ir_main_image.png" width="460" height="222" />
+                        <p>Backed by a 23-year track record, CosmoSteel Holdings Limited, the holding company of Kim Seng Huat Hardware Pte Ltd, has a strong reputation as a supplier and distributor of piping system components.</p>
+
+<p>Our end-user customers are typically companies engaged in the design, engineering and/or fabrication works mainly in the Energy, Marine and other industries in Southeast Asia. Some of these major customers include Alstom Group, Keppel Group, Dyna-mac Engineering Services Pte Ltd, P.T. Toyo Kanetsu Indonesia and Ranhill International Inc.</p>
+
+<p>We offer an extensive inventory of approximately 10,000 line items across our three main product categories of pipes, fittings and flanges, comprising mainly of carbon steel or stainless steel products. As part of our value-added services, we also provide machining services to customise our products according to customers' specific requirements.</p>
+
+<p>Our products are sourced from a wide network of manufacturers and suppliers from Europe, US and Asia including Japan and PRC, who have a proven track record in product quality and delivery capabilities.</p>
+
+<p>Product quality, timeliness and reliable customer deliveries are the foundation to the success of our business. As an endorsement of our quality assurance system, we were awarded ISO 9002:1994 certification for sales, supply and machining of flanges, steel fittings, tubings and pipes by Bureau Veritas Quality International ("BVQI") in 2000, which was replaced with ISO 9001:2000 certification in 2003.</p>
+                        </div>
+                
+                		
+                                             
+					</div>
+				</div>
+		  </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                      </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    
+      <!-- Footer Called thru AJAX-->
+     <div id="foot"></div>
+    <!-- END Footer Called thru AJAX-->
+
+</div>
+<script>
+$(function(){ $('.scrollbararea').tinyscrollbar(); });
+</script>
+</body>
+</html>

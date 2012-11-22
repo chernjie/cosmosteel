@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cosmosteel</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="assets/css/cosmosteel_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="assets/js/dd_script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="assets/js/scroll.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/navigation.html",
+    success: function(data){
+      $('#navigation').html(data);
+    }
+  })
+})
+</script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: "inc/footer.html",
+    success: function(data){
+      $('#foot').html(data);
+    }
+  })
+})
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="img_bg_a_accreditations">
+    	<div id="header">
+       		<div class="logo_holder"><h1><a href="index.html"><img src="assets/images/cosmosteel_logo.png" alt="Cosmosteel" width="159" height="106" border="0" /></a></h1></div>
+          <!-- Navigation Called thru AJAX-->
+          <div id="navigation"></div>
+          <!-- END Navigation -->
+        </div>
+      <div id="main_content">
+        	<div class="main_left"><img src="assets/images/accreditation.png" width="369" height="414" /></div>
+            <div class="main_right">
+            	<div class="sub_text_bg">
+                	<div class="sub_text_r1">
+               	  <h2>Fastest Growing Internationalising Award</h2></div>
+                    <div class="sub_text_r2">
+                    	<div class="scrollbararea">
+			<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+				<div class="viewport">
+				  <div class="overview">
+                    <p>We have achieved the distinctive standing as one of Singapore’s 10 fastest growing internationalising companies in 2011. The Top 10 Fastest Growing Internationalising Award identifies the most dynamic and exciting companies from the Singapore 1000 and SME 1000 annual ranking that have attained the highest 2-year Compounded Annual Growth Rate (CAGR) from revenue outside of the Singapore market.</p>
+
+<p>The awards are co-organised by DP Information Network Pte Ltd, Ernst & Young Solutions LLP, and supported by the Accounting and Corporate Regulatory Authority (ACRA), Infocomm Development Authority of Singapore (IDA), International Enterprise Singapore (IE), SPRING Singapore (SPRING), the Singapore Business Federation (SBF) and The Business Times.</p>
+
+                    
+                    
+                  
+                  </div>
+		  </div>
+                    </div>	
+                </div>
+            </div>
+      </div>
+        
+       
+    
+    
+    </div>
+    
+      <!-- Footer Called thru AJAX-->
+     <div id="foot"></div>
+    <!-- END Footer Called thru AJAX-->
+
+</div>
+<script>
+$(function(){ $('.scrollbararea').tinyscrollbar(); });
+</script>
+</body>
+</html>
