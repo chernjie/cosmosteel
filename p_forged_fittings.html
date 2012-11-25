@@ -5,9 +5,11 @@
 <title>Cosmosteel</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link href="assets/css/cosmosteel_style.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/productslideshow.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="assets/js/dd_script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="assets/js/scroll.js" type="text/javascript"></script>
+<script src="assets/js/productslideshow.js" type="text/javascript"></script>
 <script>
 $(document).ready(function(){
   $.ajax({
@@ -51,7 +53,12 @@ $(document).ready(function(){
       <!-- END Navigation --> 
     </div>
     <div id="main_content">
-      <div class="main_left"><img src="assets/images/product/forged_fittings/big_ff1.png" width="369" height="414" /></div>
+      <div class="main_left">
+		<div id="slideshow"> 
+			<img src="assets/images/product/forged_fittings/big_ff1.png" width="369" height="414" class="active" />
+			<img src="assets/images/product/forged_fittings/big_ff2.png" width="369" height="414" />
+		</div>	  
+	  </div>
       <div class="main_right">
         <div class="product_text_bg">
           <div class="sub_text_r1">
@@ -95,9 +102,9 @@ $(document).ready(function(){
             </div>
                     <div class="product_r2_spec2"> <a href="#"><img src="assets/images/dl_pdf_btn.png" alt="Download PDF" width="109" height="31" border="0" title="Download PDF" /></a><br />
                     
-                    <a href="#"><img src="assets/images/product/forged_fittings/small_ff1.png" width="79" height="81" border="0" /></a>
+                    <a onMouseOver="loadImage(1)" href="#"><img src="assets/images/product/forged_fittings/small_ff1.png" width="79" height="81" border="0" /></a>
                     
-                    <a href="#"><img src="assets/images/product/forged_fittings/small_ff2.png" width="79" height="81" border="0" /></a></div>
+                    <a onMouseOver="loadImage(2)" href="#"><img src="assets/images/product/forged_fittings/small_ff2.png" width="79" height="81" border="0" /></a></div>
           </div>
           <div class="product_r3">
            <!-- Product lists Called thru AJAX-->
