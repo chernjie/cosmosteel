@@ -745,7 +745,7 @@ body {
 	color: #fc2d2d;
 }
 
-.contact_tab_active{
+.contact_tab a.contact_tab_active{
 	color: #fc2d2d;
 	font-weight: bold;
 }
