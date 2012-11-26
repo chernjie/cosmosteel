@@ -4,6 +4,31 @@
 ***/
 var refreshIntervalId;
 
+$(document).ready(function(){
+
+	$('a.image-thumb img').mouseover(function() {
+		var index = $(this).parent().index();
+		loadImage( index );
+	});
+
+	$('a.image-thumb img').click(function() {
+		$(this).css('opacity', '1');
+	});
+	
+	$('a.image-thumb img').mouseenter(function() {
+		$(this).css('opacity', '1');
+	});
+	
+	$('a.image-thumb img').mouseup(function() {
+		$(this).css('opacity', '0.5');
+	});
+
+	$('a.image-thumb img').mouseleave(function() {
+		$(this).css('opacity', '0.5');
+	});
+
+});
+
 function slideSwitch() {
     var $active = $('#slideshow IMG.active');
 
@@ -31,7 +56,7 @@ function slideSwitch() {
 
 function loadImage( $link ) {
 	var $images = $('#slideshow IMG');
-	var $load = $( $images[$link-1] );
+	var $load = $( $images[$link-2] );
 	
 	var $active = $('#slideshow IMG.active');
 	
@@ -42,7 +67,7 @@ function loadImage( $link ) {
 	
 	$load.css({opacity: 0.0})
         .addClass('active')
-        .animate({opacity: 1.0}, 750, function() {
+        .animate({opacity: 1.0}, 500, function() {
             $active.removeClass('active last-active');
         });
 		

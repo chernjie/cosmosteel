@@ -390,6 +390,11 @@ body {
 }
 /* END Scroll Section */
 
+a.image-thumb img {
+	opacity:0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
 .product_text_bg {
 	background: url(../images/product_text_bg.png) no-repeat;
 	width: 497px;
